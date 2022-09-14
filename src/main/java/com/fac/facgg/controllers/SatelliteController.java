@@ -56,7 +56,7 @@ public class SatelliteController {
         List<Double> dataDtos = new ArrayList<>();
 
         for (Satellite satellite : satellites) {
-            Date date = new Date(satellite.getTs() * 1000);
+            Date date = new Date(satellite.getTs() );
             SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
             String stringDate = DateFor.format(date);
             dateDtos.add(stringDate);
@@ -130,7 +130,7 @@ public class SatelliteController {
         List<Double> dataDtos = new ArrayList<>();
 
         for (Satellite satellite : satellites) {
-            Date date = new Date(satellite.getTs() * 1000);
+            Date date = new Date(satellite.getTs());
             SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
             String stringDate = DateFor.format(date);
             dateDtos.add(stringDate);
